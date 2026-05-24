@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PoC-LockDance-Xtc</string>
+    <string name="set_legacy_password_to_1111">PoC LockDance</string>
+    <string name="set_password">Set Password 1111(Old=null)</string>
+    <string name="success">Success</string>
+    <string name="pwd">1111</string>
+    <string name="clear_password">Clear Password(Old=1111)</string>
+</resources>
