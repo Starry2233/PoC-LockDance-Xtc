@@ -26,7 +26,7 @@ This PoC demonstrates an unprotected Broadcast Receiver vulnerability in the pre
 ## 漏洞详情 / Vulnerability Details
 
 - **CVE**: 申请中 / Pending
-- **CVSS**: 8.6 (AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H) — CVSS:3.1
+- **CVSS 预估评分 / Estimated Score**: 8.6 (AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H) — CVSS:3.1（等待官方审核 / pending official assessment）
 - **漏洞类型 / Type**: Incorrect Access Control / Unprotected Broadcast Receiver
 - **受影响组件 / Affected Component**: `com.xtc.i3launcher` (system launcher)
 - **受影响的 Action / Affected Actions**:
@@ -87,8 +87,7 @@ This PoC demonstrates an unprotected Broadcast Receiver vulnerability in the pre
 |-------------|-------------|
 | 2026-05-24 | 漏洞发现 / Vulnerability discovered |
 | 2026-05-24 | CVE 提交 / CVE requested (MCID15773937) |
-| TBD | CVE 分配 / CVE assigned |
-| TBD | 公开披露 / Public disclosure |
+
 
 ---
 
