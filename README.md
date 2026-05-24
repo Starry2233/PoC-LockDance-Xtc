@@ -10,7 +10,7 @@
 ## 概述 / Overview
 
 **中文**  
-本 PoC 演示了小天才电话手表 Z8A 系统预装应用 `com.xtc.i3launcher` 中存在的无权限校验 Broadcast Receiver 漏洞。恶意应用可通过发送特定 Intent 来设置或清除设备的锁屏密码，无需任何用户交互或特殊权限，导致：
+本 PoC 演示了小天才电话手表 Z8A 系统预装应用 `com.xtc.i3launcher` 中存在的无权限校验 Broadcast Receiver 漏洞。恶意应用可通过构造恶意的 Intent 来设置或清除设备的锁屏密码，无需任何用户交互或特殊权限，导致：
 
 - 设备被设置未知密码 → **永久锁死**，用户只能双清（数据全丢）
 - 攻击者知道密码 → **完全访问设备上的所有用户数据**
@@ -61,7 +61,7 @@ This PoC demonstrates an unprotected Broadcast Receiver vulnerability in the pre
 
 **中文**
 1. 恶意 App 安装到设备上（通过应用商店分发）
-2. App 在后台发送 Intent 到 `com.xtc.i3launcher`
+2. App 在后台构造恶意 Intent 发送至 `com.xtc.i3launcher`
 3. 系统锁屏密码被静默设置为 `1111`
 4. 用户被锁在设备外，或攻击者用已知密码解锁窃取数据
 
